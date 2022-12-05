@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/insomniacslk/dhcp/rfc1035label"
+	"github.com/csystem-it/dhcp/rfc1035label"
 	"github.com/stretchr/testify/require"
 )
 
@@ -25,7 +25,7 @@ func TestParseOptFQDN(t *testing.T) {
 
 func TestOptFQDNToBytes(t *testing.T) {
 	opt := OptFQDN{
-		Flags:      0,
+		Flags: 0,
 		DomainName: &rfc1035label.Labels{
 			Labels: []string{"cnos.localhost"},
 		},

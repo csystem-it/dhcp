@@ -7,8 +7,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/insomniacslk/dhcp/dhcpv4"
-	"github.com/insomniacslk/dhcp/iana"
+	"github.com/csystem-it/dhcp/dhcpv4"
+	"github.com/csystem-it/dhcp/iana"
 )
 
 // VendorData is optional data a particular vendor may or may not include

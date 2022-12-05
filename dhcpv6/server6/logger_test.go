@@ -1,11 +1,11 @@
 package server6
 
-import(
+import (
 	"log"
 	"os"
 	"testing"
 
-	"github.com/insomniacslk/dhcp/dhcpv6"
+	"github.com/csystem-it/dhcp/dhcpv6"
 	"github.com/stretchr/testify/require"
 )
 

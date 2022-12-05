@@ -4,8 +4,8 @@ import (
 	"net"
 	"testing"
 
-	"github.com/insomniacslk/dhcp/dhcpv4"
-	"github.com/insomniacslk/dhcp/iana"
+	"github.com/csystem-it/dhcp/dhcpv4"
+	"github.com/csystem-it/dhcp/iana"
 	"github.com/stretchr/testify/require"
 )
 

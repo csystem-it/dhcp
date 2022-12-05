@@ -2,6 +2,7 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
+//go:build go1.12
 // +build go1.12
 
 // Package nclient4 is a small, minimum-functionality client for DHCPv4.
@@ -22,7 +23,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/insomniacslk/dhcp/dhcpv4"
+	"github.com/csystem-it/dhcp/dhcpv4"
 )
 
 const (

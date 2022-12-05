@@ -2,6 +2,7 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
+//go:build go1.12
 // +build go1.12
 
 package nclient6
@@ -15,9 +16,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/csystem-it/dhcp/dhcpv6"
+	"github.com/csystem-it/dhcp/dhcpv6/server6"
 	"github.com/hugelgupf/socketpair"
-	"github.com/insomniacslk/dhcp/dhcpv6"
-	"github.com/insomniacslk/dhcp/dhcpv6/server6"
 	"github.com/stretchr/testify/require"
 )
 

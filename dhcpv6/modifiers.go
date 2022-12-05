@@ -4,8 +4,8 @@ import (
 	"net"
 	"time"
 
-	"github.com/insomniacslk/dhcp/iana"
-	"github.com/insomniacslk/dhcp/rfc1035label"
+	"github.com/csystem-it/dhcp/iana"
+	"github.com/csystem-it/dhcp/rfc1035label"
 )
 
 // WithOption adds the specific option to the DHCPv6 message.

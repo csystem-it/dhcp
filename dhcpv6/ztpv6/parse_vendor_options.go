@@ -5,8 +5,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/insomniacslk/dhcp/dhcpv6"
-	"github.com/insomniacslk/dhcp/iana"
+	"github.com/csystem-it/dhcp/dhcpv6"
+	"github.com/csystem-it/dhcp/iana"
 )
 
 var (

@@ -1,3 +1,4 @@
+//go:build !windows
 // +build !windows
 
 package server6
@@ -8,7 +9,7 @@ import (
 	"net"
 	"os"
 
-	"github.com/insomniacslk/dhcp/interfaces"
+	"github.com/csystem-it/dhcp/interfaces"
 	"golang.org/x/sys/unix"
 )
 

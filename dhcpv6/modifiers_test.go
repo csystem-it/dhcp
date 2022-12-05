@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/insomniacslk/dhcp/iana"
+	"github.com/csystem-it/dhcp/iana"
 	"github.com/stretchr/testify/require"
 )
 

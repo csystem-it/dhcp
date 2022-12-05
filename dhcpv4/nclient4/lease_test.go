@@ -11,9 +11,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/csystem-it/dhcp/dhcpv4"
+	"github.com/csystem-it/dhcp/dhcpv4/server4"
 	"github.com/hugelgupf/socketpair"
-	"github.com/insomniacslk/dhcp/dhcpv4"
-	"github.com/insomniacslk/dhcp/dhcpv4/server4"
 )
 
 type testLeaseKey struct {
@@ -29,7 +29,7 @@ func (lk testLeaseKey) compare(b testLeaseKey) bool {
 	return true
 }
 
-//this represents one test case
+// this represents one test case
 type testServerLease struct {
 	key          *testLeaseKey
 	assignedAddr net.IP
@@ -64,10 +64,10 @@ func (sll *testServerLeaseList) getKey(m *dhcpv4.DHCPv4) *testLeaseKey {
 
 }
 
-//use following setting to handle DORA
-//server-id: 1.2.3.4
-//subnet-mask: /24
-//return address from sll.list
+// use following setting to handle DORA
+// server-id: 1.2.3.4
+// subnet-mask: /24
+// return address from sll.list
 func (sll *testServerLeaseList) testLeaseDORAHandle(conn net.PacketConn, peer net.Addr, m *dhcpv4.DHCPv4) error {
 	reply, err := dhcpv4.NewReplyFromRequest(m)
 	if err != nil {
@@ -99,7 +99,7 @@ func (sll *testServerLeaseList) testLeaseDORAHandle(conn net.PacketConn, peer ne
 	return nil
 }
 
-//return check list for options must and may in the release msg according to RFC2131,section 4.4.1
+// return check list for options must and may in the release msg according to RFC2131,section 4.4.1
 func (sll *testServerLeaseList) getCheckList() (mustHaveOpts, mayHaveOpts map[uint8]bool) {
 	mustHaveOpts = make(map[uint8]bool)
 	mayHaveOpts = make(map[uint8]bool)
@@ -112,7 +112,7 @@ func (sll *testServerLeaseList) getCheckList() (mustHaveOpts, mayHaveOpts map[ui
 
 }
 
-//check request message according to RFC2131, section 4.4.1
+// check request message according to RFC2131, section 4.4.1
 func (sll *testServerLeaseList) testLeaseReleaseHandle(conn net.PacketConn, peer net.Addr, m *dhcpv4.DHCPv4) error {
 
 	if m.HopCount != 0 {

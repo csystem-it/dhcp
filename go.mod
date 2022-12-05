@@ -1,6 +1,6 @@
-module github.com/insomniacslk/dhcp
+module github.com/csystem-it/dhcp
 
-go 1.13
+go 1.16
 
 require (
 	github.com/fanliao/go-promise v0.0.0-20141029170127-1890db352a72
